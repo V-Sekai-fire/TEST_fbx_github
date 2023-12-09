@@ -1,1 +1,0 @@
-# TEST_fbx_github

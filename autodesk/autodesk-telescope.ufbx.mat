@@ -1,0 +1,755 @@
+version 1
+require all
+
+material black_rough
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.0100 0.0100 0.0100
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.0
+    fbx.emission_color 0.0 0.0 0.0
+    fbx.normal_map.texture maps\orangepeel_very_low_normal.png
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0100 0.0100 0.0100
+    pbr.roughness 0.3
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+    pbr.normal_map.texture maps\orangepeel_very_low_normal.png
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material black_metal
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.0100 0.0100 0.0100
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0100 0.0100 0.0100
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.8
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material stainless_finished
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.5780 0.5780 0.5780
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5780 0.5780 0.5780
+    pbr.roughness 0.1
+    pbr.metalness 1.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material red_metal
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.7536 0.0100 0.0100
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.7536 0.0100 0.0100
+    pbr.roughness 0.25
+    pbr.metalness 1.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5000
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material stainless_rough
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.5782 0.5782 0.5782
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5782 0.5782 0.5782
+    pbr.roughness 0.25
+    pbr.metalness 1.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material black_plastic
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.01 0.01 0.01
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.01 0.01 0.01
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.4500
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material eyepiece
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.01 0.01 0.01
+    fbx.diffuse_color.texture maps\eyepiece.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.01 0.01 0.01
+    pbr.base_color.texture maps\eyepiece.png
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.8
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material glass
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.5 0.5 0.5
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0.99
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5 0.5 0.5
+    pbr.roughness 0.001
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material rubber
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.0180 0.0180 0.0180
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0180 0.0180 0.0180
+    pbr.roughness 0.35
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material panel_right
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.01 0.01 0.01
+    fbx.diffuse_color.texture maps\controls_right.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.01 0.01 0.01
+    pbr.base_color.texture maps\controls_right.png
+    pbr.roughness 0.4
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material blue_plastic
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.0000 0.1601 0.7346
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0000 0.1601 0.7346
+    pbr.roughness 0.7
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.4500
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material gold_metal
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.9810 0.7217 0.1090
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.9810 0.7217 0.1090
+    pbr.roughness 0.2
+    pbr.metalness 1.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5000
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material panel_left
+    shader_type wavefront_mtl
+
+    fbx.diffuse_factor implicit 1.0
+    fbx.diffuse_color 0.01 0.01 0.01
+    fbx.diffuse_color.texture maps\controls_left.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.01 0.01 0.01
+    pbr.base_color.texture maps\controls_left.png
+    pbr.roughness 0.4
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material led3
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.9194 0.0100 0.0100
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.9194 0.0100 0.0100
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.4500
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material led1
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.8627 0.3843 0.0000
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.8627 0.3843 0.0000
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.4500
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material led2
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.0745 0.4588 0.0000
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0745 0.4588 0.0000
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.4500
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material Display1
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.5000 0.5000 0.5000
+    fbx.diffuse_color.texture maps\display1.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5000 0.5000 0.5000
+    pbr.base_color.texture maps\display1.png
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material display2
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.5000 0.5000 0.5000
+    fbx.diffuse_color.texture maps\display2.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5000 0.5000 0.5000
+    pbr.base_color.texture maps\display2.png
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material scale_right
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.5000 0.5000 0.5000
+    fbx.diffuse_color.texture maps\angle_scale_right.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5000 0.5000 0.5000
+    pbr.base_color.texture maps\angle_scale_right.png
+    pbr.roughness 0.5
+    pbr.metalness 1.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material aluminum_rough
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.7014 0.7014 0.7014
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.7014 0.7014 0.7014
+    pbr.roughness 0.4
+    pbr.metalness 1.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material black_glossy
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.0100 0.0100 0.0100
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0100 0.0100 0.0100
+    pbr.roughness 0.1
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material mirror
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.9333 0.9333 0.9333
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.9333 0.9333 0.9333
+    pbr.roughness 0.001
+    pbr.metalness 1.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material white_glossy
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.9384 0.9384 0.9384
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.9384 0.9384 0.9384
+    pbr.roughness 0.1
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material front_ring
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.0100 0.0100 0.0100
+    fbx.diffuse_color.texture maps\lens_ring.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0100 0.0100 0.0100
+    pbr.base_color.texture maps\lens_ring.png
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.8
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material tube_outer
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.4123 0.4123 0.4123
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.4123 0.4123 0.4123
+    pbr.roughness 0.02
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material tube_inner
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.0050 0.0050 0.0050
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.0050 0.0050 0.0050
+    pbr.roughness 0.4
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material remote_display
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.5000 0.5000 0.5000
+    fbx.diffuse_color.texture maps\remote_screen.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5000 0.5000 0.5000
+    pbr.base_color.texture maps\remote_screen.png
+    pbr.roughness 0.2
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material remote_keys
+    shader_type wavefront_mtl
+
+    fbx.diffuse_color 0.5000 0.5000 0.5000
+    fbx.diffuse_color.texture maps\remote_keys.png
+    fbx.specular_factor implicit 1.0
+    fbx.specular_color 1.0 1.0 1.0
+    fbx.transparency_factor 0
+    fbx.emission_color 0.0 0.0 0.0
+
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.5000 0.5000 0.5000
+    pbr.base_color.texture maps\remote_keys.png
+    pbr.roughness 0.5
+    pbr.metalness 0.0
+    pbr.coat_factor 0.0
+    pbr.specular_ior 1.5200
+    pbr.emission_color 0.0 0.0 0.0
+
+    features.pbr 1
+    features.metalness 1
+    features.diffuse 1
+    features.specular 1
+    features.emission 1
+    features.transmission 1
+    features.coat 1
+
+material wire_177088027
+    shader_type wavefront_mtl
+    fbx.specular_exponent 32
+    fbx.ambient_color 0.6941 0.3451 0.1059
+    fbx.diffuse_color 0.6941 0.3451 0.1059
+    fbx.specular_color 0.3500 0.3500 0.3500
+    fbx.transparency_factor 0
+    
+    pbr.base_factor implicit 1.0
+    pbr.base_color 0.6941 0.3451 0.1059
+    pbr.opacity 1
+
+    features.pbr 0
+    features.metalness 0
+    features.diffuse 1
+    features.specular 1
+    features.emission 0
+    features.transmission 1
+    features.coat 0
